@@ -16,6 +16,11 @@ public class Laptop {
     @Id
     Integer code;
 
+    int speed; // smallint NOT NULL ,
+    int ram; //  smallint NOT NULL ,
+    double hd; //  real NOT NULL ,
+    double price;//   decimal(12,2) NULL ,
+    int screen; // smallint NOT NULL
 
     @ManyToOne
             @JoinColumn(name = "model")
